@@ -12,10 +12,31 @@
     <link rel="stylesheet" href="css/mobile.css" />
 </head>
 <script>
-    function resize(originSize){
-
+    window.onload=function(){
+        /*简单页面时动态改变尺寸，一般不用*/
         var widths=document.documentElement.clientWidth;
-        var scale=widths/originSize*100;
+        var scale=widths/750;
+        var meta=document.querySelector("meta[name=viewport]");
+        meta.setAttribute("content","width==device-width,initial-scale="+scale+",maxinum-scale="+scale+",user-scalable=0")
+    }
+    function resize(originSize){
+        var widths=document.documentElement.clientWidth;
+        var heights=document.documentElement.clientHeight;
+        if(widths>heights){
+            var scale=widths/originSize*100;
+        }else if(widths<=heights){
+
+            var scale=heights/originSize*100;
+        }
+//        var type=type||"x";
+//        if(type=="x"){
+//            var widths=document.documentElement.clientWidth;
+//            var scale=widths/originSize*100;
+//        }else if(type=="y"){
+//            var heights=document.documentElement.clientHeight;
+//            var scale=heights/originSize*100;
+//        }
+
         document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
     }
     $(function(){
@@ -58,7 +79,7 @@
                 <p>乔布斯音乐节</p>
                 <p>欢迎您的加入</p>
             </div>
-            <button class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">立即进入</button>
+            <a href="index.html"><button class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">立即进入</button></a>
         </div>
     </div>
     <div class="swiper-pagination"></div>
