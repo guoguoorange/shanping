@@ -37,6 +37,12 @@
             $(".cehua").css("left","-6rem");
             $(".mask").css("display","none");
         })
+        $(".icon-11").click(function(){
+            $(".seach").css("display","block")
+        })
+        $(".icon-fanhui").click(function(){
+            $(".seach").css("display","none")
+        })
     })
 </script>
 <body>
@@ -60,9 +66,11 @@
     <div class="chb">
         <ul>
             <li>
-                <b class="iconfont icon-naozhong"></b>
-                <span>定时关闭</span>
-                <b class="iconfont icon-renturn"></b>
+                <a href="close.html">
+                    <b class="iconfont icon-naozhong"></b>
+                    <span>定时关闭</span>
+                    <b class="iconfont icon-renturn"></b>
+                </a>
             </li>
             <li>
                 <b class="iconfont icon-huiyuanzhongxin"></b>
@@ -89,6 +97,39 @@
     <button>退出登录</button>
 </div>
 <div class="mask"></div>
+<div class="seach">
+    <div class="top">
+        <b class="iconfont icon-fanhui"></b>
+        <form action="">
+            <input type="text " value="请输入音乐、歌手、歌词">
+           <input value="搜索" type="button">
+        </form>
+        <p>取消</p>
+    </div>
+    <div class="hot">
+        <p>热门搜索</p>
+        <span>绿茶</span>
+        <span>听见下雨的声音</span>
+        <span>雨一直下</span>
+        <span>一次就好</span>
+        <span>海绵宝宝</span>
+        <span>演员</span>
+        <span>那就这样吧</span>
+        <span>不完美女孩</span>
+        <span>白日梦</span>
+        <span>异想记</span>
+        <div style="clear:both"></div>
+    </div>
+    <ul class="list">
+        <li class="iconfont icon-jinru">矜持</li>
+        <li class="iconfont icon-jinru">自由</li>
+        <li class="iconfont icon-jinru">思念是一种病</li>
+        <li class="iconfont icon-jinru">那些花儿</li>
+        <li class="iconfont icon-jinru">听妈妈的话</li>
+        <li class="iconfont icon-jinru">海绵宝宝</li>
+    </ul>
+    <div class="clear">清除搜索历史</div>
+</div>
 <div class="center">
     <img src="img/2016-12-13_143852.png" alt="">
     <h5>乖乖果效</h5>
@@ -106,7 +147,7 @@
 <a href="lyric.html" class="playbox">
     <img src="img/2016-12-13_113239.png" alt="">
     <div class="text">
-        <h5>睡在我上铺的兄弟</h5>
+        <h5>矜持--电影《前任攻略》主题曲</h5>
         <p>03：45</p>
     </div>
     <div class="progress">
@@ -119,7 +160,6 @@
         <b class="iconfont icon-xiayiqu"></b>
         <b class="iconfont icon-ttpodicon1"></b>
     </div>
-
 </a>
 </body>
 </html>

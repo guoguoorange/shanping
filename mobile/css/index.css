@@ -7,6 +7,11 @@ body,html{
 h5{
 	color: #333;
 }
+a{
+	text-decoration: none;
+	color: #666;
+	display: block;
+}
 *{
 	padding: 0;margin: 0;
 	list-style: none;
@@ -151,6 +156,80 @@ nav a:nth-child(3){
 	z-index: 8;
 	display: none;
 }
+.seach{
+	width: 100%;
+	height:100%;
+	position: fixed;
+	top:0;
+	background: #222;
+	z-index: 6;
+	display:none;
+}
+.seach .top{
+	width:100%;
+	height:0.88rem;
+	background: #111;
+	padding:0.2rem;
+	box-sizing: border-box;
+}
+.seach .top input:nth-child(1){
+	width: 4.8rem;
+	margin-left:0.2rem;
+	background: #666;
+	color:#ccc;
+	font-size: 0.15rem;
+}
+.seach .top input:nth-child(2){
+	width: 0.8rem;
+	color: #fff;
+	background: #222;
+	margin-right: 0.2rem;
+}
+.seach .top b{
+	float: left;
+	color: #fff;
+	margin-top: 0.1rem;
+	font-size: 0.4rem;
+}
+.seach .top p{
+	float: left;
+	color: #fff;
+	margin-top: 0.1rem;
+	font-size: 0.25rem;
+}
+.seach .top input{
+	float: left;
+	height:0.5rem;
+	border: none;
+}
+.seach .hot{
+	padding: 0.2rem;
+}
+.secch .hot p{
+	display: block;
+	margin: 0.2rem 0;
+}
+.seach .hot span{
+	display: block;
+	float: left;
+	margin: 0.1rem 0.2rem;
+	border: 0.01rem solid #ccc;
+	padding: 0.1rem;
+	border-radius: 0.05rem;
+}
+.seach .list{
+	width: 100%;
+	padding: 0.5rem;
+}
+.seach .list li{
+	width: 80%;
+	padding: 0.2rem 0;
+	border-bottom: 0.01rem solid #ccc;
+}
+.clear{
+	color: #FDB814;
+	text-align: center;
+}
 .hot{
 	margin-top: 0.88rem;
 	width:100%;
@@ -174,7 +253,7 @@ nav a:nth-child(3){
 	background-size: cover;
 }
 .hotbot{
-	width: 80%;
+	width: 6rem;
 	height:1.4rem;
 	background: #111;
 	margin: 0 auto;
@@ -195,6 +274,9 @@ nav a:nth-child(3){
 	box-shadow: 0 0 30px #FDB814;
 }
 .txt{
+	width: 2.5rem;
+	height:1.3rem;
+	overflow: hidden;
 	position: absolute;
 	top:0;
 	left:1.8rem;
@@ -206,10 +288,6 @@ nav a:nth-child(3){
 }
 .txt p{
 	padding:0;margin: 0;
-	font-size: 0.16rem;
-	color: #eee;
-}
-.star{
 	font-size: 0.16rem;
 	color: #eee;
 }
@@ -344,6 +422,14 @@ nav a:nth-child(3){
 
 }
 .list3 button{
+
+	width: 1.4rem;
+	height:0.6rem;
+	background: #FDB814;
+	color: #fff;
+	border-radius:0.4rem ;
+	position: absolute;
+	right:0.1rem;
 	top:0.2rem;
 }
 .playbox{
@@ -365,6 +451,9 @@ nav a:nth-child(3){
 }
 .playbox .text{
 	float: left;
+	width: 3.4rem;
+	height: 0.88rem;
+	overflow: hidden;
 	margin-left: 0.2rem;
 	padding: 0.1rem;
 	box-sizing: border-box;
@@ -374,8 +463,15 @@ nav a:nth-child(3){
 }
 .pla{
 	float: right;
-	margin-right: 1rem;
-	margin-top:0.2rem;
+	margin-right: 0.2rem;
+	margin-top:0.15rem;
+	text-decoration: none;
+}
+.pla b{
+	font-size: 0.22rem;
+}
+.pla .icon-bofang{
+	font-size: 0.44rem;
 }
 .progress{
 	width: 4rem;
