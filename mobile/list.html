@@ -43,6 +43,26 @@
         $(".icon-fanhui").click(function(){
             $(".seach").css("display","none")
         })
+        var flag=true;
+        $(".cehua button").click(function(){
+            if(flag){
+                $(".cehua button").html("登录/注册");
+                $(".cehua .text").css("display","none");
+                $(".cehua img").eq(0).css("display","none");
+                $(".cehua img").eq(1).css("display","block");
+
+                flag=false;
+            }else{
+                location.href="login.html";
+                setInterval(function(){
+                    $(".cehua button").html("退出登录");
+                    $(".cehua .text").css("display","block");
+                    $(".cehua img").eq(0).css("display","block");
+                    $(".cehua img").eq(1).css("display","none");
+                    flag=true;
+                },1000)
+            }
+        })
     })
 </script>
 <body>
@@ -58,6 +78,7 @@
 <div class="cehua">
     <div class="top">
         <img src="img/2016-12-13_143852.png" alt="">
+        <img src="img/1.png" alt="">
         <div class="text">
             <h3>乖乖果效</h3>
             <p>Small apple,Small life.</p>
@@ -78,19 +99,26 @@
                 <b class="iconfont icon-renturn"></b>
             </li>
             <li>
-                <b class="iconfont icon-shanchu"></b>
-                <span>清除缓存</span>
-                <b class="iconfont icon-renturn"></b>
+                <a href="delete.html">
+                    <b class="iconfont icon-shanchu"></b>
+                    <span>清除缓存</span>
+                    <b class="iconfont icon-renturn"></b>
+                </a>
+
             </li>
             <li>
-                <b class="iconfont icon-guanyuwomen"></b>
-                <span>关于我们</span>
-                <b class="iconfont icon-renturn"></b>
+                <a href="about.html">
+                    <b class="iconfont icon-guanyuwomen"></b>
+                    <span>关于我们</span>
+                    <b class="iconfont icon-renturn"></b>
+                </a>
             </li>
             <li>
-                <b class="iconfont icon-fankui"></b>
-                <span>反馈</span>
-                <b class="iconfont icon-renturn"></b>
+                <a href="fk.html">
+                    <b class="iconfont icon-fankui"></b>
+                    <span>反馈</span>
+                    <b class="iconfont icon-renturn"></b>
+                </a>
             </li>
         </ul>
     </div>

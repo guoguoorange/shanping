@@ -90,7 +90,7 @@ nav a:nth-child(3){
 	width: 6rem;
 	height:100%;
 	background:  #ddd;
-	position: fixed;
+	position: absolute;
 	left:-6rem;
 	top:0;
 	z-index: 30;
@@ -100,7 +100,7 @@ nav a:nth-child(3){
 	height:5rem;
 	background: #222;
 }
-.cehua .top img{
+.top img{
 	width: 2rem;
 	height:2rem;
 	margin: 0.8rem;
@@ -109,14 +109,17 @@ nav a:nth-child(3){
 	border-radius: 50%;
 	float: left;
 }
-.cehua .top .text{
+.top img:nth-child(2){
+	display: none;
+}
+.top .text{
 
 	float: left;
 	width: 2.4rem;
 	line-height: 0.5rem;
 	margin-top: 1.9rem;
 }
-.cehua .top h3{
+.top h3{
 	color: #fff;
 }
 .chb{
@@ -177,7 +180,7 @@ nav a:nth-child(3){
 	margin-left:0.2rem;
 	background: #666;
 	color:#ccc;
-	font-size: 0.15rem;
+	font-size: 0.24rem;
 }
 .seach .top input:nth-child(2){
 	width: 0.8rem;
@@ -224,7 +227,7 @@ nav a:nth-child(3){
 .seach .list li{
 	width: 80%;
 	padding: 0.2rem 0;
-	border-bottom: 0.01rem solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 .clear{
 	color: #FDB814;
@@ -283,12 +286,12 @@ nav a:nth-child(3){
 }
 .txt h6{
 	padding:0;margin: 0;
-	font-size: 0.16rem;
+	font-size: 0.24rem;
 	color: #fff;
 }
 .txt p{
 	padding:0;margin: 0;
-	font-size: 0.16rem;
+	font-size: 0.22rem;
 	color: #eee;
 }
 .hotbot button{
@@ -360,7 +363,7 @@ nav a:nth-child(3){
 }
 .list1 .box p{
 	margin-left: 0.04rem;
-	font-size: 0.12rem;
+	font-size: 0.24rem;
 	height:0.3rem;
 	overflow: hidden;
 }
@@ -451,15 +454,15 @@ nav a:nth-child(3){
 }
 .playbox .text{
 	float: left;
-	width: 3.4rem;
-	height: 0.88rem;
-	overflow: hidden;
 	margin-left: 0.2rem;
 	padding: 0.1rem;
 	box-sizing: border-box;
 }
 .playbox h5{
 	color: #fff;
+	width: 3.4rem;
+	overflow: hidden;
+	height: 0.3rem;
 }
 .pla{
 	float: right;

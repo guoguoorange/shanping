@@ -37,46 +37,43 @@ header .txt{
     font-size: 0.4rem;
     float: left;
 }
-.body{
-    margin: 0.2rem;
-    margin-top: 1.08rem;
-    background: #fff;
+.form{
+    margin-top: 0.88rem;
+    padding:0.2rem;
 }
-.body li{
-    line-height: 1rem;
-    padding-left: 0.2rem;
-    font-size: 0.3rem;
-    border-bottom: 0.01rem solid #ccc;
-    position: relative;
+textarea{
+    width: 100%;
+    height:3rem;
+    background: #ccc;
+    border: none;
+    border-radius: 0.05rem;
+    color: #666;
+    resize:none;
+    padding: 0.2rem;
+    box-sizing: border-box;
 }
-.body li .iconfont{
-    position: absolute;
-    right:0.2rem;
-    color: #FDB814;
-}
-.body li input{
-    position: absolute;
-    top:0.3rem;
-    right:0.2rem;
-}
-.btn{
+input:nth-child(2){
     width: 100%;
     height:1rem;
-    padding: 0 0.2rem;
-    box-sizing: border-box;
-    position: fixed;
-    bottom: 0.2rem;
-}
-.btn button{
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    background: #ccc;
     border: none;
-    display: block;
-    width: 50%;
-    height:1rem;
-    text-align: center;
-    line-height: 1rem;
-    float: left;
-    background: #fff;
+    border-radius: 0.05rem;
+    box-sizing: border-box;
+    color: #666;
 }
-.btn button:nth-child(1){
-    border-right:0.01rem solid #ccc ;
+p{
+    margin: 0.2rem 0;
+}
+input[type="button"]{
+    display: block;
+    width: 3rem;
+    height:1rem;
+    background: #ccc;
+    border: none;
+    border-radius: 0.05rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #666;
 }

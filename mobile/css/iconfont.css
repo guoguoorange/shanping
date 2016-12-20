@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1482066862478'); /* IE9*/
-  src: url('iconfont.eot?t=1482066862478#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1482066862478') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1482066862478') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1482066862478#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1482217638605'); /* IE9*/
+  src: url('iconfont.eot?t=1482217638605#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1482217638605') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1482217638605') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1482217638605#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -21,11 +21,17 @@
 
 .icon-jinru1:before { content: "\e60b"; }
 
+.icon-QQ:before { content: "\e60f"; }
+
 .icon-11:before { content: "\e606"; }
 
 .icon-xiazai:before { content: "\e62a"; }
 
+.icon-zhankai:before { content: "\e635"; }
+
 .icon-xingji:before { content: "\e684"; }
+
+.icon-tianjia:before { content: "\e6ad"; }
 
 .icon-ttpodicon:before { content: "\e64d"; }
 
@@ -49,9 +55,25 @@
 
 .icon-guanyuwomen:before { content: "\e603"; }
 
+.icon-pinglun:before { content: "\e638"; }
+
+.icon-gequxinxi:before { content: "\e6aa"; }
+
 .icon-svg11:before { content: "\e832"; }
 
+.icon-yixuan:before { content: "\e629"; }
+
+.icon-zhiding:before { content: "\e60d"; }
+
 .icon-wode:before { content: "\e64f"; }
+
+.icon-mima:before { content: "\e61e"; }
+
+.icon-weixin:before { content: "\e611"; }
+
+.icon-paizhao:before { content: "\e640"; }
+
+.icon-2:before { content: "\e60c"; }
 
 .icon-fankui:before { content: "\e604"; }
 
@@ -64,6 +86,8 @@
 .icon-jinru:before { content: "\e627"; }
 
 .icon-xihuan:before { content: "\e6b3"; }
+
+.icon-youxiang:before { content: "\e61c"; }
 
 .icon-changge:before { content: "\e634"; }
 
@@ -89,7 +113,11 @@
 
 .icon-xiayiqu:before { content: "\e636"; }
 
+.icon-shouhui:before { content: "\e67e"; }
+
 .icon-wusunyinzhi:before { content: "\e608"; }
 
 .icon-cd:before { content: "\e631"; }
+
+.icon-lingsheng:before { content: "\e60e"; }
 
